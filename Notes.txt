@@ -1,0 +1,32 @@
+================================ EP: 2 ================================
+Two kind of dependency:
+1. Dev dependency: Used during development like parcel. npm install -D packageName:
+2. Mormal dependency: It is used in production also.
+
+Package.json sign meaning:
+^: When a minor version available of package it will automatically install it.
+~: When a major version available it will automatically install it.
+
+Package.json: It is package manager of npm which keep track install packages and their version.
+Package-lock.json: Keeps the track of exact package version
+node_modules: Keep the all code that we fetch from npm.
+Transit dependency: Every dependency having their own dependency.
+
+npm: install a package
+npx: execute a package
+
+Parcel:
+- Parcel is a package/builder which build our app and run.
+- Create dev build and and local server.
+- Refresh page on change: HMR Hot Module Refresh.
+- File watching Algo written in C++
+- Caching daster build
+- Bundeling
+- Code spliting
+- Differentiate bundling: Support old browser
+- Tree shaking - remove unused code
+- Different dev and prod build.
+npx parcel build index.html : remove main from package to resolve conflicts.
+npx parcel index.html: will build our app and run on a port.
+
+Using React and React DOM from CDN is not a prefered way as it has to make request
